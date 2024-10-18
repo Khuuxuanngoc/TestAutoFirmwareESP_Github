@@ -89,7 +89,7 @@
 // }
 
 
-#define ESP8266 // Hoặc ESP32
+// #define ESP8266 // Hoặc ESP32
 
 #if defined(ESP8266)
   #include <ESP8266WiFi.h>
@@ -103,8 +103,8 @@
   #error "Bạn cần định nghĩa ESP8266 hoặc ESP32"
 #endif
 
-const char* ssid = "Your_SSID";
-const char* password = "Your_PASSWORD";
+const char* ssid = "Hshop.vn";
+const char* password = "";
 
 WiFiClient client; // Khai báo WiFiClient ở đây
 
@@ -134,7 +134,7 @@ String getFirmwareVersion() {
   }
 }
 
-String currentVersion = "1.0.0"; // Phiên bản hiện tại của firmware
+String currentVersion = "1.0.1"; // Phiên bản hiện tại của firmware
 
 void loop() {
   String latestVersion = getFirmwareVersion();
